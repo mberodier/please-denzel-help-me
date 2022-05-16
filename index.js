@@ -173,6 +173,7 @@ I'm not proud of this year's WAA project. The project seemed very interresting r
 Besides I struggled a lot in focusing on this particular project as I had other ones to do at the same time. And because it was the most difficult for me (new coding language, new concept, new working method)
 However, I insist that the content of the course is very clear and motivating.
 */
+
 // Q19. What are some things you like about the developer tools you use?
 /*
 My favourite coding language are SQL & Python.
@@ -184,7 +185,9 @@ SQL because I've got a particular interest in databases. I'm currently doing an 
 Besides, SQL isn't just a programming tool, but it also allows to analyse real performances by filtering virtual documented tables. 
 
 */
+
 // Q20. Last question: could you explain me - in your terms - why the title of the course is "Web Application Architecture(s)" and not "Web Application Architecture"?
 /*
-Architectures with 's' because several architectures exist to design and code a web application. It's possible to build very simple web app or, on the contrary, multi layered web applications which are more complex.
+Architectures with 's' because several architectures exist to design and code a web application. 
+It's possible to build a very simple web app or, on the contrary, multi layered web applications which are more complex.
 */
