@@ -43,28 +43,52 @@ awards['movie'] = 'Training Day';
 // * Cry Freedom (1987)
 // * For Queen and Countryy (1988)
 
+const earlywork = {
+  'Carbon Copy': 1981,
+  'A Soldier Story': 1984,
+  'Power': 1986,
+  'Cry Freedom': 1987,
+  'For Queen and Countryy': 1988
+};
+
 // Q7. Return a new array from `debaters` with all item in uppercase
 const debaters = ['we do', 'what we have to do', 'in order to do', 'what we want to do'];
+
+const UCdebaters = [];
+for (var i = 0; i < debaters.length; i++) {
+  UCdebaters[i] = debaters[i].toLocaleUpperCase()
+};
+
+// UCdebaters for UpperCase debaters
+
 
 // Q8. Using this array.
 // Do the following 5 steps
 const directors = ['spikelee', 'ridleyscott', 'zemeckis'];
 
 // 1. add "tonyscott" value to the end of `directors` array
-
+directors.push('tonyscott');
 // 2. remove "spikelee" value and store it in a variable called firstDirector
-
+const firstDirector = directors.shift();
 // 3. add "himself" value to the start of `directors` array
-
+directors.unshift('himself');
 // 4. remove "ridleyscott" value from the array and store it in a variable called secondDirector
-
+directors.splice(1, 1);
+const secondDirector = "ridleyscott";
 // 5. let 'zemeckis' in the array but put a copy of it on a variable called thirdDirector
-
+const thirdDirector = directors[1];
 
 // Q9. Write the function `duplicate` that return the expected result
 console.log(duplicate(['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']));
 // ❯ ['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child', 'Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']
 
+function duplicate(list) {
+  const arr = list;
+  list.forEach((value, key) => {
+    arr.push(value);
+  });
+  return arr;
+}
 
 // Q10. Refactor the current ES5-style function `police` in ES6-style.
 const police = function (names) {
@@ -153,5 +177,5 @@ Besides, SQL isn't just a programming tool, but it also allows to analyse real p
 */
 // Q20. Last question: could you explain me - in your terms - why the title of the course is "Web Application Architecture(s)" and not "Web Application Architecture"?
 /*
-
+Architectures with 's' because several architectures exist to design and code a web application. It's possible to build very simple web app or, on the contrary, multi layered web applications which are more complex.
 */
