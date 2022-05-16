@@ -1,12 +1,22 @@
 // Q1. Create a variable called `denzel` - that can't be redeclared - and assign it the string 'please denzel, help me'
 
+const denzel="please denzel, help me" ;
+
+
 // Q2. Use the variable `actor` to create a new variable called `inspirational` that is assigned the string "Is Denzel Washington an inspirational actor?"
 const actor = 'Denzel Washington';
+const inspirational = 'Is ' + actor + ' an inspirational actor?';
 
 // Q3  Create an object called `family` and give it the following properties:
 // family has been `married` on "1983" (Number)
 // family is not `presidentOfTheUnitedStates` (boolean)
 // family has `children` called "John David", "Katia", "Olivia" and "Malcolm" (array of strings)
+
+const family = {
+  'married': 1983,
+  'presidentOfTheUnitedStates': false,
+  'children': ['John David', 'Katia', 'Olivia', 'Malcolm']
+};
 
 // Q4. Change
 // * the `name` stage to "A Raisin in the Sun"
@@ -16,12 +26,14 @@ const stage = {
   'name': 'Fences',
   'year': '2010'
 };
+stage.name = 'A Raisin in the Sun';
+stage.year = '2014';
 
 // Q5. Change the `movie` "glory" to "Training Day" using square bracket notation
 const awards = {
   'movie': 'glory'
 };
-
+awards['movie'] = 'Training Day';
 // Q6. Create an object called "earlywork"
 // The key should be the movie name and the value the release year
 // Movies are
