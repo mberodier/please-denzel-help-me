@@ -83,12 +83,12 @@ console.log(duplicate(['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Eve
 // ❯ ['Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child', 'Happily', 'Ever', 'After', 'Fairy', 'Tales', 'for', 'Every', 'Child']
 
 function duplicate(list) {
-  const arr = list;
-  list.forEach((value, key) => {
-    arr.push(value);
-  });
-  return arr;
-}
+  const duplicatedList = list;
+  for (let i = 0; i < list.length; i++) {
+    duplicatedList.push(list[i]);
+  }
+  return duplicatedList
+};
 
 // Q10. Refactor the current ES5-style function `police` in ES6-style.
 const police = function (names) {
@@ -109,12 +109,21 @@ console.log(police(chorus));
 // Q11. Related to the https://www.tvmaze.com/people/66167/denzel-washington link
 // What's the query selector to get all Cast Credits titles (Live with Kelly & Ryan, The Late Show with Stephen Colbert...).
 
+document.getElementsByClassName("right small-12 columns");
+
 // Q12. Related to the https://www.tvmaze.com/people/66167/denzel-washington link
 // How many http requests are performed to render the page?
+// 45 requests are needed to render the page
 
 // Q13. Related to the following api call with "curl"
 // ❯ curl "http://api.tvmaze.com/people/6616"
 // Could you describe and explain the response?
+
+/* 
+The response displayed is a json file which contains some attributes (name, birth date, gender..) of the actor corresponding to id: 6616 (here Zach Shirey)
+There ise also its photos from the website and the link of this json file.
+
+*/
 
 // Q14. Refactor the following codebase with a promise notation
 fs.readFile(filePath, function(err, data) {
